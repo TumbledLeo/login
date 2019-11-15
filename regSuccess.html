@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/regSuccess.css">
+    <script>
+        var fontSize = window.screen.width / 10 + "px";
+        // 1rem = 37.5px;
+        // console.log(window.screen.width);
+        document.getElementsByTagName("html")[0].style.fontSize = fontSize;
+    </script>
+    <title>注册成功</title>
+</head>
+
+<body>
+    <div class="top">
+        <h6 class="tit">
+            <span class="goHis"></span>
+            注册成功
+        </h6>
+    </div>
+    <p class="tip1">恭喜您注册成功</p>
+    <a href="javascript:;" class="down">点击下载云律通企业版APP</a>
+    <p class="tip2">或在PC端访问云律通企业版网站</p>
+    <a href="http://www.legalcloudai.cn" class="tip3">http://www.legalcloudai.cn</a>
+
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.js"></script>
+    <script>
+        // <
+        // !--判断安卓 IOS-- >
+
+
+        var u = navigator.userAgent;
+
+        var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
+
+        var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+        function test() {
+            if (isAndroid == true) {
+
+                console.log("安卓手机")
+                $('.down').attr("href", "https://www.baidu.com");
+            } else {
+
+                console.log("苹果手机")
+                $('.down').attr("href", "http://www.legalcloudai.cn");
+            }
+        }
+        test()
+
+
+        $('.goHis').click(function () {
+            window.history.go(-1)
+        })
+    </script>
+</body>
+
+</html>

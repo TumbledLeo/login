@@ -1,0 +1,88 @@
+.top {
+  height: 1.6rem;
+  background: #133e69;
+  color: #fff;
+  padding-top: 0.33333333rem;
+  text-align: center;
+  font-size: 0.42666667rem;
+  position: relative;
+}
+.top > span {
+  position: absolute;
+  left: 0.53333333rem;
+  top: 0.44rem;
+  width: 0.17333333rem;
+  height: 0.32rem;
+  background: url("../images/right_jiantou.png") no-repeat;
+  background-size: 100% 100%;
+}
+.content {
+  border-top-left-radius: 0.4rem;
+  border-top-right-radius: 0.4rem;
+  margin-top: -0.8rem;
+  position: relative;
+  z-index: 2;
+  background: #fff;
+  font-size: 0.37333333rem;
+  color: #666;
+}
+.content > h6 {
+  padding: 0.4rem;
+  font-size: 0.4rem;
+  color: #333;
+  padding-left: 0.4rem;
+  position: relative;
+  margin-left: 0.4rem;
+  padding-bottom: 0.13333333rem;
+}
+.content > h6::before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0.24rem;
+  width: 0.05333333rem;
+  height: 0.32rem;
+  background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.5) 0%, rgba(255, 255, 255, 0.5) 100%), linear-gradient(#0072ff, #0072ff);
+  background-blend-mode: overlay,
+                normal;
+  border-radius: 0.01333333rem;
+}
+.content ul li {
+  padding: 0 0.4rem;
+  position: relative;
+  letter-spacing: 1px;
+  padding-top: 0.13333333rem;
+}
+.content ul li.active {
+  padding-bottom: 0.66666667rem;
+}
+.content ul li.active::before {
+  width: 10rem;
+  height: 0.41333333rem;
+  display: block;
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: url('../images/protocol_line.png') no-repeat;
+  background-size: 100% 100%;
+}
+.content ul li.active::after {
+  width: 9rem;
+  height: 1px;
+  display: block;
+  content: '';
+  position: absolute;
+  bottom: 0.2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  border-bottom: 1px dashed #ccc;
+}
+.content ul li:last-child {
+  margin-bottom: 1.33333333rem;
+}
+.content ul li p {
+  line-height: 1.8;
+  text-indent: 1em;
+}

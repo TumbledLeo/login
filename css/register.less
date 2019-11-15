@@ -1,0 +1,244 @@
+html,
+body {
+    width: 100%;
+    height: 100%
+}
+
+body {
+    width:100%;     height:100%;
+    background: url('../images/register_bg.jpg') no-repeat;
+    background-size: cover;
+}
+
+.top {
+    width: 750/75rem;
+    height: 526/75rem;
+    background: url('../images/register_top_bg.png') no-repeat;
+    background-size: contain;
+    overflow: hidden;
+
+
+    >.tit {
+        font-size: 32/75rem;
+        text-align: center;
+        color: #fff;
+        margin-top: 33/75rem;
+        letter-spacing: 2/75rem;
+        position: relative;
+
+        >span {
+            position: absolute;
+            left: 42/75rem;
+            top: 50%;
+            transform: translateY(-50%);
+            background: url('../images/right_jiantou.png') no-repeat;
+            background-size: 100%;
+            width: 13/75rem;
+            height: 24/75rem;
+        }
+    }
+
+}
+
+
+.registerBox {
+    font-size: 36/75rem;
+    padding: 0 30/75rem;
+
+    .register {
+
+
+        .radio {
+            position: relative;
+            display: inline-block;
+            margin-left: 12/75rem;
+            margin-top: 24/75rem;
+            font-size: 28/75rem;
+            color: #555555;
+
+            input {
+                width: 15/75rem;
+                height: 15/75rem;
+                appearance: none;
+                /*清楚默认样式*/
+                -webkit-appearance: none;
+                opacity: 0;
+                outline: none;
+                z-index: 8;
+                /*让input层级高于label，使之能选中*/
+
+            }
+
+            .sex {
+                position: absolute;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                // width: 15px;
+                // height: 15px;
+                // border: 1px solid #3582E9;
+
+                width: 28/75rem;
+                height: 28/75rem;
+                background-color: #e7eaef;
+                border-radius: 6/75rem;
+                border: solid 2/75rem #1665aa;
+            }
+
+            input:checked+.sex::after {
+                content: "";
+                position: absolute;
+
+                /* 这里显示矩形的一半边框再旋转45度来实现对勾样式 */
+                width: 15/75rem;
+                height: 12/75rem;
+                background: url('../images/register_checked.png') no-repeat;
+                background-size: contain;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+
+            >a {
+                color: #1665aa;
+            }
+
+
+
+        }
+
+
+
+
+
+        p {
+            margin-top: 20/75rem;
+            position: relative;
+
+
+
+            >input {
+                display: block;
+
+                border: none;
+                background: #ccc;
+                outline: none;
+                height: 88/75rem;
+                background-color: #e7eaef;
+                border-radius: 20/75rem;
+
+                box-sizing: border-box;
+                padding-left: 28/75rem;
+                width: 100%;
+                font-size: 28/75rem;
+            }
+
+            >.getCode {
+                padding-left: 10/75rem;
+                position: absolute;
+                right: 30/75rem;
+                top: 50%;
+                transform: translateY(-50%);
+                font-size: 22/75rem;
+                color: #0a508b;
+                width: 200/75rem;
+                height: 56/75rem;
+                border-radius: 27/75rem;
+                border: 1px solid #0a508b;
+                text-align: center;
+                background: transparent;
+
+            }
+
+
+        }
+
+        >.btn {
+            display: block;
+            border: none;
+            outline: none;
+            width: 690/75rem;
+            height: 88/75rem;
+            background-image: linear-gradient(0deg,
+                    #49bdff 0%,
+                    #86d3ff 100%),
+                linear-gradient(#e7eaef,
+                    #e7eaef);
+            background-blend-mode: normal,
+                normal;
+            box-shadow: 0/75rem 0/75rem 10/75rem 0/75rem rgba(0, 151, 255, 0.3);
+            border-radius: 44px;
+            margin: 0 auto;
+            font-size: 32/75rem;
+
+            letter-spacing: 2/75rem;
+            color: #ffffff;
+            text-align: center;
+            line-height: 88/75rem;
+            margin-top: 24/75rem;
+            margin-bottom: 50/75rem;
+        }
+    }
+
+
+
+}
+.check{
+    position: absolute;
+   display:none;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.8);
+    z-index:99;
+    .content{
+        width:200px;
+       position: absolute;
+       top:30%;
+       left:50%;
+       margin-left:-100px;
+    }
+    #verify-img{
+        position: absolute;
+        top:0;
+    }
+    input{
+        position: absolute;
+        top:60px;
+        display: block;
+        border: none;
+        background: #ccc;
+        outline: none;
+        height: 1.17333333rem;
+        background-color: #e7eaef;
+        border-radius: 0.26666667rem;
+        box-sizing: border-box;
+        padding-left: 0.37333333rem;
+        width: 100%;
+        font-size: 0.4rem;
+        margin-top:20px;
+        text-align: center;
+    }
+    button{
+        position: absolute;
+        top:90px;
+    display: block;
+    border: none;
+    outline: none;
+    width: 200px;
+    height: 1.17333333rem;
+    background-image: linear-gradient(0deg, #49bdff 0%, #86d3ff 100%), linear-gradient(#e7eaef, #e7eaef);
+    background-blend-mode: normal, normal;
+    box-shadow: 0rem 0rem 0.13333333rem 0rem rgba(0, 151, 255, 0.3);
+    border-radius: 44px;
+    margin: 20px auto;
+    font-size: 0.42666667rem;
+    letter-spacing: 0.02666667rem;
+    color: #ffffff;
+    text-align: center;
+    line-height: 1.17333333rem;
+    margin-top: 1.32rem;
+    margin-bottom: 0.66666667rem;
+    }
+}

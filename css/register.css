@@ -1,0 +1,196 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+body {
+  width: 100%;
+  height: 100%;
+  background: url('../images/register_bg.jpg') no-repeat;
+  background-size: cover;
+}
+.top {
+  width: 10rem;
+  height: 7.01333333rem;
+  background: url('../images/register_top_bg.png') no-repeat;
+  background-size: contain;
+  overflow: hidden;
+}
+.top > .tit {
+  font-size: 0.42666667rem;
+  text-align: center;
+  color: #fff;
+  margin-top: 0.44rem;
+  letter-spacing: 0.02666667rem;
+  position: relative;
+}
+.top > .tit > span {
+  position: absolute;
+  left: 0.56rem;
+  top: 50%;
+  transform: translateY(-50%);
+  background: url('../images/right_jiantou.png') no-repeat;
+  background-size: 100%;
+  width: 0.17333333rem;
+  height: 0.32rem;
+}
+.registerBox {
+  font-size: 0.48rem;
+  padding: 0 0.4rem;
+}
+.registerBox .register .radio {
+  position: relative;
+  display: inline-block;
+  margin-left: 0.16rem;
+  margin-top: 0.32rem;
+  font-size: 0.37333333rem;
+  color: #555555;
+}
+.registerBox .register .radio input {
+  width: 0.2rem;
+  height: 0.2rem;
+  appearance: none;
+  /*清楚默认样式*/
+  -webkit-appearance: none;
+  opacity: 0;
+  outline: none;
+  z-index: 8;
+  /*让input层级高于label，使之能选中*/
+}
+.registerBox .register .radio .sex {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0.37333333rem;
+  height: 0.37333333rem;
+  background-color: #e7eaef;
+  border-radius: 0.08rem;
+  border: solid 0.02666667rem #1665aa;
+}
+.registerBox .register .radio input:checked + .sex::after {
+  content: "";
+  position: absolute;
+  /* 这里显示矩形的一半边框再旋转45度来实现对勾样式 */
+  width: 0.2rem;
+  height: 0.16rem;
+  background: url('../images/register_checked.png') no-repeat;
+  background-size: contain;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.registerBox .register .radio > a {
+  color: #1665aa;
+}
+.registerBox .register p {
+  margin-top: 0.26666667rem;
+  position: relative;
+}
+.registerBox .register p > input {
+  display: block;
+  border: none;
+  background: #ccc;
+  outline: none;
+  height: 1.17333333rem;
+  background-color: #e7eaef;
+  border-radius: 0.26666667rem;
+  box-sizing: border-box;
+  padding-left: 0.37333333rem;
+  width: 100%;
+  font-size: 0.37333333rem;
+}
+.registerBox .register p > .getCode {
+  padding-left: 0.13333333rem;
+  position: absolute;
+  right: 0.4rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 0.29333333rem;
+  color: #0a508b;
+  width: 2.66666667rem;
+  height: 0.74666667rem;
+  border-radius: 0.36rem;
+  border: 1px solid #0a508b;
+  text-align: center;
+  background: transparent;
+}
+.registerBox .register > .btn {
+  display: block;
+  border: none;
+  outline: none;
+  width: 9.2rem;
+  height: 1.17333333rem;
+  background-image: linear-gradient(0deg, #49bdff 0%, #86d3ff 100%), linear-gradient(#e7eaef, #e7eaef);
+  background-blend-mode: normal,
+                normal;
+  box-shadow: 0rem 0rem 0.13333333rem 0rem rgba(0, 151, 255, 0.3);
+  border-radius: 44px;
+  margin: 0 auto;
+  font-size: 0.42666667rem;
+  letter-spacing: 0.02666667rem;
+  color: #ffffff;
+  text-align: center;
+  line-height: 1.17333333rem;
+  margin-top: 0.32rem;
+  margin-bottom: 0.66666667rem;
+}
+.check {
+  position: absolute;
+  display: none;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 99;
+}
+.check .content {
+  width: 200px;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  margin-left: -100px;
+}
+.check #verify-img {
+  position: absolute;
+  top: 0;
+}
+.check input {
+  position: absolute;
+  top: 60px;
+  display: block;
+  border: none;
+  background: #ccc;
+  outline: none;
+  height: 1.17333333rem;
+  background-color: #e7eaef;
+  border-radius: 0.26666667rem;
+  box-sizing: border-box;
+  padding-left: 0.37333333rem;
+  width: 100%;
+  font-size: 0.4rem;
+  margin-top: 20px;
+  text-align: center;
+}
+.check button {
+  position: absolute;
+  top: 90px;
+  display: block;
+  border: none;
+  outline: none;
+  width: 200px;
+  height: 1.17333333rem;
+  background-image: linear-gradient(0deg, #49bdff 0%, #86d3ff 100%), linear-gradient(#e7eaef, #e7eaef);
+  background-blend-mode: normal, normal;
+  box-shadow: 0rem 0rem 0.13333333rem 0rem rgba(0, 151, 255, 0.3);
+  border-radius: 44px;
+  margin: 20px auto;
+  font-size: 0.42666667rem;
+  letter-spacing: 0.02666667rem;
+  color: #ffffff;
+  text-align: center;
+  line-height: 1.17333333rem;
+  margin-top: 1.32rem;
+  margin-bottom: 0.66666667rem;
+}

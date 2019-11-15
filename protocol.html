@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/protocol.css">
+    <title>使用提示</title>
+    <script>
+        var fontSize = window.screen.width / 10 + "px";
+        // 1rem = 37.5px;
+        // console.log(window.screen.width);
+        document.getElementsByTagName("html")[0].style.fontSize = fontSize;
+    </script>
+</head>
+
+<body>
+    <div class="top">
+        <span class="goHis"></span>使用提示
+    </div>
+    <div class="content">
+        <h6>用户使用须知: </h6>
+        <ul>
+            <li class="active">
+                <p>1、“常年法律顾问”模块由专业律师以“年”为单位，对企业用户提供系统性、多元化日常法律服务。</p>
+            </li>
+            <li class="active">
+                <p>2、在每一服务年度，常年法律顾问律师的服务内容包括：</p>
+                <p>（1）解答法律咨询，依法提供建议或者出具律师意见书；</p>
+                <p>（2）协助草拟、制订、审查或者修改合同、章程等法律文书；</p>
+                <p>（3）应企业用户要求，就企业已经面临或者可能发生的纠纷，进行法律论证，提出解决方案，出具律师函，发表律师意见。</p>
+
+
+            </li>
+            <li class="active">
+                <p> 3、常年法律顾问律师对服务范围不包括企业用户诉讼或者仲裁法律程序的专案代理，也不包括企业涉及税务咨询、税务筹划、长期投资、融资、企业改制、重组、并购、破产、股票发行、上市等专项法律顾问事务。
+
+                </p>
+            </li>
+            <li>
+                <p> 4、购买常年法律顾问服务，可获得当前年度企业增值服务特权，免费使用各项智能法律服务产品（非人工）。
+
+                </p>
+            </li>
+        </ul>
+    </div>
+
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.js"></script>
+    <script>
+        $('.goHis').click(function () {
+            window.history.go(-1)
+        })
+    </script>
+</body>
+
+</html>
